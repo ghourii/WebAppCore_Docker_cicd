@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  webappcore_docker_cicd:
+    image: ${DOCKER_REGISTRY-}webappcoredockercicd
+    build:
+      context: .
+      dockerfile: WebAppCore_Docker_cicd\Dockerfile
